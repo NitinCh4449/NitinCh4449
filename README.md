@@ -80,15 +80,17 @@ public class BinaryTree {
 
 ANS 3)- 
 sting="$180,240/y"
+
 **Below program to convert string into integer:**
+
 public class ABC {
     public static void main(String[] args) {
         String str = "$180,240/y";
         int result = stringtoint(str);
         System.out.println("Converted integer: " + result);
     }
-
-    public static int stringtoint(String str) {
+    
+    public static int stringtoint(String str) {
         StringBuilder numericString = new StringBuilder();
         for (char c : str.toCharArray()) {
             if (Character.isDigit(c)) {
